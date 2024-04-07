@@ -8,27 +8,103 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Formulario con contactos Bootstrap Responsivo</title>
-</head>
-<body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container d-flex justify-content-between">
-                <a class="navbar-brand" href="#">Ciclo 2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav
-                    ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F3FF;
+        }
+        .button{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 2%;
+        }
+        .brand > p{
+            font-size: 40px ;
+            color: #52A65A ;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .helper-text{
+            color:  gray;
+        }
+        main{
+            padding-top: 3em;
+        }
+        h1{
+            font-size: 3em;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+        p,button,li{
+            font-size: 1.18em;
+        }
+        .bi{
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            button{
+                width: 100% !important;
+                order: 2 !important;
+            }
+            #menu-items > li{
+                display: none;
+            }
+            #img{
+                margin-top: 4em;
+                position: relative;
+                top: 20%;
+            }
+            #img,#img>div, #img>div>div, #img>div>div>div{
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+                display: block !important;
+                max-width: max-content;
+            }
+            h1{
+                font-size: 3em;
+            }
+            .bi{
+                display: block;
+                font-size: 3em;
+            }
+            .content, .col-6, .col{
+                display: block !important;
+                width: 100% !important;
+            }
+            .info-course >div{
+                width: 100% !important;
+            }
+
+        p,button,li{
+            font-size: 1.5em;
+        }
+        }
+
+    </style>
+</head>
+<body style="background-color: #F8F3FF;" class="container">
+
+    <header class="">
+        <nav class="d-flex justify-content-between navbar navbar-expand-lg">
+            <div class="brand">
+                <p>Caroline</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarNav">
+                <ul id="menu-items" class="navbar-nav flex">
+                    <li class="nav-item me-4">Inicio</li>
+                    <li class="nav-item me-4">Sobre Nosotros</li>
+                    <li class="nav-item">Contacto</li>
+                </ul>
             </div>
         </nav>
     </header>
